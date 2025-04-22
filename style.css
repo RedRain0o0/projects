@@ -25,24 +25,17 @@ html, body {
   position: absolute;
   width: 500px;
   height: 400px;
-  top: calc(50% - 200px);
+  top: 20px;
   left: calc(50% - 250px);
 }
 
-#projects > span{
+#projects > span {
 	height: 100%;
 	display: flex;
 	flex-direction: column;
 	gap: 8px;
 	overflow-y: scroll;
 }
-
-/*.projectModrinth {
-  background-color: #fff;
-  position: relative;
-  width: 500px;
-  height: 200px;
-}*/
 
 .projectModrinth{
 	display: grid;
@@ -64,29 +57,14 @@ html, body {
 	height: 128px;
 }
 
-/*.projectName > img {
-  position: absolute;
-  top: 10px;
-  left: 148px;
-  font-size: 22px;
-}*/
-
 .projectName {
   grid-area: name;
   display: flex;
+  text-decoration: none;
   gap: 8px;
-}
-
-.projectName > p{
 	font-size: 22px;
 	color: #000;
 	margin-block: 0;
-}
-
-.projectName > img{
-	aspect-ratio: 1/1;
-	height: 30px;
-	margin-block: auto;
 }
 
 .projectDescription {
