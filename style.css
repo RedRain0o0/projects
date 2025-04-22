@@ -1,5 +1,5 @@
 html, body {
-  background-color: #888;
+  background-color: #aaa;
   text-align: center;
 }
 
@@ -8,8 +8,90 @@ html, body {
   top: 0px;
   left: 0px;
   width: 100%;
-  height: 100px;
-  background_color: #999;
+  height: 50px;
+  background-color: #999;
+}
+
+#main {
+  position: absolute;
+  top: 50px;
+  left: 0px;
+  width: 100%;
+  height: calc(100% - 150px);
+  background-color: #f99;
+}
+
+#projects {
+  position: absolute;
+  width: 500px;
+  height: 400px;
+  top: calc(50% - 200px);
+  left: calc(50% - 250px);
+}
+
+#projects > span{
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	overflow-y: scroll;
+}
+
+/*.projectModrinth {
+  background-color: #fff;
+  position: relative;
+  width: 500px;
+  height: 200px;
+}*/
+
+.projectModrinth{
+	display: grid;
+	background: #fff;
+	grid-template-areas:
+		"icon name"
+		"icon desc";
+	grid-template-columns: auto 1fr;
+	grid-template-rows: auto 1fr;
+	border-radius: 16px;
+	padding: 8px;
+	gap: 8px;
+}
+
+.projectIcon {
+	grid-area: icon;
+	border-radius: 8px;
+	width: 128px;
+	height: 128px;
+}
+
+/*.projectName > img {
+  position: absolute;
+  top: 10px;
+  left: 148px;
+  font-size: 22px;
+}*/
+
+.projectName {
+  grid-area: name;
+  display: flex;
+  gap: 8px;
+}
+
+.projectName > p{
+	font-size: 22px;
+	color: #000;
+	margin-block: 0;
+}
+
+.projectName > img{
+	aspect-ratio: 1/1;
+	height: 30px;
+	margin-block: auto;
+}
+
+.projectDescription {
+	grid-area: desc;
+	margin: 4px;
 }
 
 #footer {
@@ -18,5 +100,5 @@ html, body {
   left: 0px;
   width: 100%;
   height: 100px;
-  background_color: #aaa;
+  background-color: #888;
 }
